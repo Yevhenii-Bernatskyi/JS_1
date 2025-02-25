@@ -100,14 +100,7 @@ const triangle = (value1, type1, value2, type2) => {
         alpha = toDegrees(Math.atan(a / b));
         beta = 90 - alpha;
 
-        console.log(`Результати:
-            a = ${a.toFixed(2)}
-            b = ${b.toFixed(2)}
-            c = ${c.toFixed(2)}
-            alpha = ${alpha.toFixed(2)}°
-            beta = ${beta.toFixed(2)}°`);
-    
-        return "success";
+        return results(a,b,c,alpha, beta);
     }
 
     //катет і гіпотенуза
